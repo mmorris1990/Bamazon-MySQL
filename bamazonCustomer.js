@@ -1,7 +1,6 @@
 require("dotenv").config();
 var mysql = require("mysql");
 var inquirer = require("inquirer");
-var fs = require("fs");
 var Table = require("cli-table");
 
 // Create connection to db
@@ -16,7 +15,7 @@ var connection = mysql.createConnection({
 // Test connection
 connection.connect(function (err) {
     if (err) throw err;
-    console.log(" =================== \n Welcome to Bamazon! \n =================== \n");
+    console.log("\n =================== \n Welcome to Bamazon! \n =================== \n");
     welcome();
 });
 
