@@ -19,7 +19,8 @@ A CLI application featuring a mock storefront where users can "purchase" product
 - Inquirer provides an easy to use UI with prompts asking the user what they would like to do.
 - Table organizes product, price, department, and inventory data in a concise manner within the CLI.
 
-## How to use? *Note: all technologies used must be installed first, and the .sql file needs to be ran in MySQL to initiate the database*
+## How to use? 
+*Note: all technologies used must be installed first, and the .sql file needs to be ran in MySQL to initiate the database*
 
 1. Run the following in your CLI while inside your cloned repo directory
 
