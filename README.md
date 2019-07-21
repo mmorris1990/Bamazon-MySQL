@@ -33,14 +33,12 @@ A CLI application featuring a mock storefront where users can "purchase" product
 
 4. Input and enter the quantity that you would like to buy
 
-**If you select a quantity that is equal to or less than the current inventory, the sale will be a success**
+  **If you select a quantity that is equal to or less than the current inventory, the sale will be a success**
 ![Sale Success](/media/bamazon3.png)
 
-**If there is not enough of the product in inventory, the sale will not be completed**
+  **If there is not enough of the product in inventory, the sale will not be completed**
 ![Sale Failed](/media/bamazon4.png)
 
 5. If you would like to buy another item, repeat from step 2
 
 6. If you would like to leave, click exit
-
-######© M. Morris 2019
