@@ -1,7 +1,7 @@
 # Bamazon - MySQL & Node.JS App
 A CLI application featuring a mock storefront where users can "purchase" products.
 
-**See it running [here](/media/bamazon_showcase.webm)**
+**See it running [here](https://drive.google.com/open?id=17pVEpH-R6eBCQIkiEn1cD-_6FRX1IX3p)**
 
 ## Tech used
 - Node.JS
