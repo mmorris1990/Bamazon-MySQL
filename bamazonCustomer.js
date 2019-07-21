@@ -1,3 +1,4 @@
+require("dotenv").config();
 var mysql = require("mysql");
 var inquirer = require("inquirer");
 var fs = require("fs");
@@ -5,11 +6,11 @@ var Table = require("cli-table");
 
 // Create connection to db
 var connection = mysql.createConnection({
-    host: "localhost",
-    port: 3306,
-    user: "root",
-    password: "7283",
-    database: "bamazon"
+    host: process.env.DB_HOST,
+    port: process.env.DB_PORT,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASS,
+    database: process.env.DB_DB
 });
 
 // Test connection
@@ -52,7 +53,7 @@ var viewItems = function () {
         });
         console.log("\nHere is what we have for sale! ");
         for (var i = 0; i < res.length; i++) {
-            table.push([res[i].item_id, res[i].product_name, res[i].department_name, res[i].price.toFixed(2), res[i].stock_quantity]);
+            table.push([res[i].item_id, res[i].product_name, res[i].department_name, "$" + res[i].price, res[i].stock_quantity]);
         }
         console.log(table.toString());
 
